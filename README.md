@@ -65,7 +65,7 @@ Nuestra arquitectura se divide en dos planos principales, comunicados mediante u
 * Instalar dependencias:
   ```bash
   pip install ultralytics opencv-python numpy streamlit pandas matplotlib seaborn
-  Instrucciones de Ejecución
+Instrucciones de Ejecución
 Paso 1: Iniciar el Centro de Operaciones (NOC)
 Abre una terminal en la raíz del proyecto y ejecuta el dashboard:
 
