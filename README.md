@@ -65,3 +65,44 @@ Nuestra arquitectura se divide en dos planos principales, comunicados mediante u
 * Instalar dependencias:
   ```bash
   pip install ultralytics opencv-python numpy streamlit pandas matplotlib seaborn
+  Instrucciones de Ejecución
+Paso 1: Iniciar el Centro de Operaciones (NOC)
+Abre una terminal en la raíz del proyecto y ejecuta el dashboard:
+
+ ```Bash
+streamlit run dashboard_noc.py
+ ```
+
+Paso 2: Iniciar el Gemelo Digital
+
+Abre Webots y carga el archivo del mundo (.wbt).
+
+Asegúrate de que el controlador del vehículo apunte al script agente_edge.py.
+
+Presiona el botón de Play en Webots.
+
+**Paso 3: Inyección de Caos (Validación PoC)**
+Para esta fase de Prueba de Concepto, la inyección de fallas se realiza directamente en la capa física. Mueve o coloca los obstáculos dinámicos (cajas o vehículos) directamente en el entorno 3D de Webots. Observa cómo el Agente Edge audita la zona con su cámara, ejecuta el frenado autónomo y cómo el dashboard en Streamlit traduce esa retención física en degradación del SLA en tiempo real.
+
+📂 Estructura del Repositorio
+Plaintext
+
+📦 HPE-CDS-Los-Foraneos
+ ┣ 📂 controllers
+ ┃ ┗ 📂 agente_edge
+ ┃   ┗ 📜 agente_edge.py       # Script principal de Webots (IA, YOLO, A*)
+ ┣ 📂 dashboard
+ ┃ ┗ 📜 dashboard_noc.py       # Interfaz web SRE en Streamlit
+ ┣ 📂 worlds
+ ┃ ┗ 📜 ciudad_anillo.wbt      # Entorno virtual de simulación 3D
+ ┣ 📜 paper_investigacion.pdf  # Documento técnico IEEE (Sustento Matemático)
+ ┣ 📜 README.md                # Este archivo
+ ┗ 📜 telemetria.json          # Archivo de intercambio de datos locales
+👥 El Equipo "Los Foráneos"
+Alondra M. Pérez Ramírez - Data & Network Architecture
+
+Roberto Moreno Mendoza - Edge Computing & Computer Vision
+
+Joel Pablo Vargas - Simulation & Kinematics
+
+Agradecimiento especial a nuestro asesor titular, Dr. Fabricio Otoniel Pérez Pérez.
