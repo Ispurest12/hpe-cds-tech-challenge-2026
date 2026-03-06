@@ -101,7 +101,7 @@ Para esta fase de Prueba de Concepto, la inyección de fallas se realiza directa
  ┃ ┗ 📜 noc_dashboard.py               # Interfaz web SRE en Streamlit
  ┣ 📂 worlds
  ┃ ┗ 📜 ciudad_anillo.wbt              # Entorno virtual de simulación 3D
- ┣ 📜 paper_investigacion.pdf          # Documento técnico IEEE
+ ┣ 📜 Gemelo_Digital_Doc_tecnico.pdf          # Documento técnico IEEE
  ┗ 📜 README.md                        # Este archivo
 ```
 
