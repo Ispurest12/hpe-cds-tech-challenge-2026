@@ -103,7 +103,6 @@ Para esta fase de Prueba de Concepto, la inyección de fallas se realiza directa
  ┃ ┗ 📜 ciudad_anillo.wbt              # Entorno virtual de simulación 3D
  ┣ 📜 paper_investigacion.pdf          # Documento técnico IEEE
  ┗ 📜 README.md                        # Este archivo
- ┗ 📜 Video_demostrativo.mp4
 ```
 
 ---
