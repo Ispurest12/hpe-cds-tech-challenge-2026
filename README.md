@@ -70,7 +70,7 @@ pip install ultralytics opencv-python numpy streamlit pandas matplotlib seaborn
 **Paso 1: Iniciar el Centro de Operaciones (NOC)**
 Abre una terminal en la raíz del proyecto y ejecuta el dashboard:
 ```bash
-streamlit run dashboard_noc.py
+python -m streamlit run dashboard_noc.py
 ```
 
 **Paso 2: Iniciar el Gemelo Digital**
