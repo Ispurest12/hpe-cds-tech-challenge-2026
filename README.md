@@ -112,14 +112,14 @@ Los archivos CSV de telemetría corresponden a distintos escenarios experimental
 
 Estos registros permiten analizar el comportamiento del sistema, reproducir las gráficas de latencia y generar los mapas de riesgo mediante los scripts contenidos en el mismo directorio.
 
-Los scripts de análisis (Graficas de telemetria.py y Mapa2.0.py) permiten reconstruir las visualizaciones utilizadas en el documento técnico.
+Los scripts de análisis (Graficas de telemetria.py y MapaKDE.py) permiten reconstruir las visualizaciones utilizadas en el documento técnico.
 
 ## 📂 Estructura del Repositorio
 ```text
 📦 HPE-CDS-Los-Foraneos
  ┣ 📂 analytics                # Scripts y datasets de experimentación (ETL / KDE)
  ┃ ┣ 📜 Graficas de telemetria.py
- ┃ ┣ 📜 Mapa2.0.py
+ ┃ ┣ 📜 MapaKDE.py
  ┃ ┣ 📜 telemetria_Optima.csv
  ┃ ┣ 📜 telemetria_Saturacion.csv
  ┃ ┣ 📜 telemetria_FalloTotal.csv
