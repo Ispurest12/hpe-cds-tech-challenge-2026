@@ -16,9 +16,7 @@ Este proyecto presenta una arquitectura de resiliencia predictiva basada en un *
 A través del simulador **Cyberbotics Webots**, modelamos un "Agente Edge" (un vehículo de servicios de emergencia) que actúa como la manifestación física y cinemática de un paquete de datos enrutado a través de una red corporativa.
 
 ### 🎥 Demostración en Video
-*[¡AQUÍ! Coloca el link de YouTube o inserta un GIF de tu coche frenando frente a la caja]*
-[![Video Demo](https://img.shields.io/badge/Watch-Video_Demo-red)](#)
-
+![passingPeopleGIF](https://github.com/user-attachments/assets/d6d04395-c2b5-4875-a54d-fed87e1c9c8a)
 ---
 
 ## 🏗️ Arquitectura del Sistema
@@ -88,16 +86,24 @@ Para esta fase de Prueba de Concepto, la inyección de fallas se realiza directa
 ## 📂 Estructura del Repositorio
 ```text
 📦 HPE-CDS-Los-Foraneos
+ ┣ 📂 analytics                # Scripts y datasets de experimentación (ETL / KDE)
+ ┃ ┣ 📜 Graficas de telemetria.py
+ ┃ ┣ 📜 Mapa2.0.py
+ ┃ ┣ 📜 telemetria_Optima.csv
+ ┃ ┣ 📜 telemetria_Saturacion.csv
+ ┃ ┣ 📜 telemetria_FalloTotal.csv
+ ┃ ┣ 📜 telemetria_falloN3.csv
+ ┃ ┗ 📜 telemetria_avanzadaMapaV.csv
  ┣ 📂 controllers
  ┃ ┗ 📂 agente_edge
- ┃   ┗ 📜 agente_edge.py       # Script principal de Webots (IA, YOLO, A*)
+ ┃   ┗ 📜 agente_edge_controller.py    # Script principal de Webots (IA, YOLO, A*)
  ┣ 📂 dashboard
- ┃ ┗ 📜 dashboard_noc.py       # Interfaz web SRE en Streamlit
+ ┃ ┗ 📜 noc_dashboard.py               # Interfaz web SRE en Streamlit
  ┣ 📂 worlds
- ┃ ┗ 📜 ciudad_anillo.wbt      # Entorno virtual de simulación 3D
- ┣ 📜 paper_investigacion.pdf  # Documento técnico IEEE (Sustento Matemático)
- ┣ 📜 README.md                # Este archivo
- ┗ 📜 telemetria.json          # Archivo de intercambio de datos locales
+ ┃ ┗ 📜 ciudad_anillo.wbt              # Entorno virtual de simulación 3D
+ ┣ 📜 paper_investigacion.pdf          # Documento técnico IEEE
+ ┗ 📜 README.md                        # Este archivo
+ ┗ 📜 Video_demostrativo.mp4
 ```
 
 ---
