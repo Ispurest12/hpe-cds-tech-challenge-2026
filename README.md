@@ -15,6 +15,23 @@ Este proyecto presenta una arquitectura de resiliencia predictiva basada en un *
 
 A través del simulador **Cyberbotics Webots**, modelamos un "Agente Edge" (un vehículo de servicios de emergencia) que actúa como la manifestación física y cinemática de un paquete de datos enrutado a través de una red corporativa.
 
+---
+
+## 🌐 Abstracción del Modelo
+Nuestro modelo no está ligado a un dominio específico.
+
+El vehículo autónomo funciona como una abstracción de un flujo de alta prioridad dentro de un sistema distribuido...
+
+- Redes corporativas: paquete crítico
+- Logística: traslado de valores
+- Servicios de emergencia: ambulancia
+
+En todos los casos aparece el mismo fenómeno estructural:
+latencia, cuellos de botella y degradación acumulativa del servicio.
+
+---
+
+
 ### 🎥 Demostración en Video
 ![passingPeopleGIF](https://github.com/user-attachments/assets/d6d04395-c2b5-4875-a54d-fed87e1c9c8a)
 ---
