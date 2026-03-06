@@ -70,7 +70,7 @@ pip install ultralytics opencv-python numpy streamlit pandas matplotlib seaborn
 **Paso 1: Iniciar el Centro de Operaciones (NOC)**
 Abre una terminal en la raíz del proyecto y ejecuta el dashboard:
 ```bash
-python -m streamlit run dashboard_noc.py
+python -m streamlit run noc_dashboard.py
 ```
 
 **Paso 2: Iniciar el Gemelo Digital**
@@ -95,7 +95,7 @@ Para esta fase de Prueba de Concepto, la inyección de fallas se realiza directa
  ┃ ┣ 📜 telemetria_falloN3.csv
  ┃ ┗ 📜 telemetria_avanzadaMapaV.csv
  ┣ 📂 controllers
- ┃ ┗ 📂 agente_edge
+ ┃ ┗ 📂 agente_edge_controller
  ┃   ┗ 📜 agente_edge_controller.py    # Script principal de Webots (IA, YOLO, A*)
  ┣ 📂 dashboard
  ┃ ┗ 📜 noc_dashboard.py               # Interfaz web SRE en Streamlit
