@@ -82,6 +82,20 @@ python -m streamlit run noc_dashboard.py
 Para esta fase de Prueba de Concepto, la inyección de fallas se realiza directamente en la capa física. Mueve o coloca los obstáculos dinámicos (cajas o vehículos) directamente en el entorno 3D de Webots. Observa cómo el Agente Edge audita la zona con su cámara, ejecuta el frenado autónomo y cómo el dashboard en Streamlit traduce esa retención física en degradación del SLA en tiempo real.
 
 ---
+## 🧪 Reproducibilidad
+
+Los experimentos presentados en el documento técnico pueden reproducirse utilizando los conjuntos de datos incluidos en el directorio analytics/.
+
+Los archivos CSV de telemetría corresponden a distintos escenarios experimentales del sistema:
+
+- *Ruta Óptima:* ejecución sin perturbaciones ni congestión.
+- *Perturbación Leve:* presencia de obstrucciones temporales que generan micro-retenciones en el agente.
+- *Throttling Crónico:* acumulación progresiva de congestión que produce degradación significativa del SLA.
+- *Fallo Total (SPOF):* bloqueo permanente de un nodo crítico que impide alcanzar el destino.
+
+Estos registros permiten analizar el comportamiento del sistema, reproducir las gráficas de latencia y generar los mapas de riesgo mediante los scripts contenidos en el mismo directorio.
+
+Los scripts de análisis (Graficas de telemetria.py y Mapa2.0.py) permiten reconstruir las visualizaciones utilizadas en el documento técnico.
 
 ## 📂 Estructura del Repositorio
 ```text
